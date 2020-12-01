@@ -1,0 +1,54 @@
+
+<section class="Singup-wrap mtb-40">
+    <div class="container">
+        <!-- <div class="row justify-content-center" *ngIf="!error"> -->
+            <div class="row justify-content-center">
+          <div class="col-md-6">
+              <div class="login-box">
+                  <h1>User Registration</h1>
+                  <div class="alert alert-success" *ngIf="datasaved">
+                     {{massage}}
+                  </div>
+                  <form  (ngSubmit)="onSubmit()" [formGroup]="regForm">
+                      
+                      <div class="form-group form-row">
+                          <label class="col-md-3">First Name : <span class="required">*</span></label>
+                          <div class="col-md-9">
+                            <input type="text" formControlName="FirstName" class="form-control" placeholder="First Name" required>
+                            <span *ngIf="!regForm.get('FirstName').valid && regForm.get('FirstName').touched">Please enter First Name !!!</span>
+                          </div>
+                      </div>
+                  
+                      <div class="form-group form-row">
+                          <label class="col-md-3">Last Name : <span class="required">*</span></label>
+                          <div class="col-md-9">
+                            <input type="text" formControlName="LastName" class="form-control" placeholder="Last Name" required>
+                            <span *ngIf="!regForm.get('LastName').valid && regForm.get('LastName').touched">Please enter First Name !!!</span>
+                          </div>
+                      </div>
+                      <div class="form-group form-row">
+                          <label class="col-md-3">Email ID <span class="required">*</span></label>
+                          <div class="col-md-9">
+                            <input type="text" formControlName="EmailId" class="form-control" placeholder="Email Id" required>
+                            <span *ngIf="!regForm.get('EmailId').valid && regForm.get('EmailId').touched">Please enter First Name !!!</span>
+                          </div>
+                      </div>
+                      <div class="form-group form-row">
+                          <label class="col-md-3">Password <span class="required">*</span></label>
+                          <div class="col-md-9">
+                            <input type="text" formControlName="Password" class="form-control" placeholder="Password" required>
+                            <span *ngIf="!regForm.get('Password').valid && regForm.get('Password').touched">Please enter First Name !!!</span>
+                          </div>
+                      </div>
+                  
+                      <div class="form-group">
+                          <button type="submit" [disabled]="!regForm.valid" class="btn btn-primary">Submit</button>
+                      </div>
+                  </form>
+              </div>         
+          </div>
+        </div>
+       
+    </div>
+  </section>
+  

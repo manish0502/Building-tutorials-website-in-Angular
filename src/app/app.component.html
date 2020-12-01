@@ -1,0 +1,7 @@
+<app-header></app-header>
+<app-banner *ngIf="router.url == '/'"></app-banner>
+<div class="container">
+    <app-course-featured *ngIf="router.url == '/'"></app-course-featured>
+    <router-outlet></router-outlet> 
+  </div>
+  <app-footer></app-footer>

@@ -9,7 +9,7 @@
                   <div class="alert alert-success" *ngIf="datasaved">
                      {{massage}}
                   </div>
-                  <form  (ngSubmit)="onSubmit()" [formGroup]="regForm">
+                  <form  (ngSubmit)="onSubmit(regForm)" [formGroup]="regForm">
                       
                       <div class="form-group form-row">
                           <label class="col-md-3">First Name : <span class="required">*</span></label>

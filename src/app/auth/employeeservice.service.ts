@@ -10,14 +10,18 @@ import {Loginemployee} from './login/loginemployee';
 })
 export class EmployeeserviceService {
 
-  url='http://localhost:54868/'
+  url='http://localhost:3000/registration'
+  
   constructor(private http:HttpClient) { }
 
 
-  createemployee(employee:Employee):Observable<Employee>{
-    return this.http.post<Employee>(this.url+'api/Employeemasters',employee)
-  }
+  // createemployee(employee:Employee):Observable<Employee>{
+  //   return this.http.post<Employee>(this.url+'',employee)
+  // }
+  createemployee(employee):Observable<Employee>{
+    return this.http.post<Employee>(this.url,employee)
 
+  }
   
   loginemployee(loginEmployee: Loginemployee): Observable<Loginemployee> {
     return this.http.post<Loginemployee>(this.url + 'api/Login', loginEmployee)

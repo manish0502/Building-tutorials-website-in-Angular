@@ -4,21 +4,21 @@
         <div class="row justify-content-center">
           <div class="col-md-8">
             <h1>Contact Us</h1>
-            <form>
+            <form [formGroup]="contactForm" (ngSubmit)="postData(contactForm)" >
               <div class="form-group">
-                <input type="text" name="name" class="form-control" placeholder="Name">
+                <input type="text" name="name" class="form-control" placeholder="Name" formControlName="Name">
               </div>
               <div class="form-group">
-                <input type="text" name="email" class="form-control" placeholder="E-Mail">
+                <input type="text" name="email" class="form-control" placeholder="E-Mail" formControlName="Email">
               </div>
               <div class="form-group">
-                <input type="text" name="phone" class="form-control" placeholder="Phone">
+                <input type="text" name="phone" class="form-control" placeholder="Phone" formControlName="phone">
               </div>
               <div class="form-group">
-                <textarea name="message" rows="5" class="form-control" placeholder="Message"></textarea>
+                <textarea name="message" rows="5" class="form-control" placeholder="Message" formControlName="Message"></textarea>
               </div>
               <div class="form-group">
-                <button class="btn btn-success">Send</button>
+                <button type="submit" class="btn btn-success">Send</button>
               </div>
             </form>
           </div>

@@ -27,14 +27,24 @@ export class RegistrationComponent implements OnInit {
     })
   }
 
-  onSubmit() {
+  onSubmit(regForm) {
     
-    let employee = this.regForm.value;
+    let Newemployee = {
+      id: Math.floor(100000 + Math.random() * 900000),
+      FirstName:regForm.value.FirstName,
+      LastName:regForm.value.LastName,
+      EmailId:regForm.value.EmailId,
+      Password:regForm.value.Password
 
-    this.createemployee(employee);
+
+    }
+
+    this.createemployee(Newemployee);
     this.regForm.reset();
   }
-  createemployee(employee: Employee) {
+  createemployee(employee) {
+   
+
     this.employeeservice.createemployee(employee).subscribe(
       () => {
         this.datasaved = true;

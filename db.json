@@ -1,0 +1,113 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "registration": [
+    {
+      "id": 2,
+      "FirstName": "Manish",
+      "LastName": "Giri",
+      "EmailId": "manishKumar@gmail.com",
+      "Password": "1234"
+    },
+    {
+      "LastName": "kumar",
+      "FirstName": "rakesh",
+      "EmailId": "manish@gmail.com",
+      "Password": "1234",
+      "id": 3
+    },
+    {
+      "id": 868568,
+      "FirstName": "manish",
+      "LastName": "rajesh",
+      "EmailId": "rajesh@gmail.com",
+      "Password": "123455"
+    },
+    {
+      "id": 859944,
+      "FirstName": "man",
+      "LastName": "asda",
+      "EmailId": "manish@gmail.com",
+      "Password": "1231"
+    },
+    {
+      "id": 204301,
+      "FirstName": "manish",
+      "LastName": "kumar",
+      "EmailId": "vdxfc@gmail",
+      "Password": "sgdfhgf"
+    }
+  ],
+  "contact": [
+    {
+      "id": 123,
+      "name": "manish",
+      "email": "mukesh@gmail.com",
+      "contact": "1234",
+      "message": "this is my concern"
+    },
+    {
+      "id": 451855
+    },
+    {
+      "id": 507754
+    },
+    {
+      "id": 500506
+    },
+    {
+      "id": 174369
+    },
+    {
+      "id": 189161
+    },
+    {
+      "id": 987370
+    },
+    {
+      "id": 926863
+    },
+    {
+      "id": 598632
+    },
+    {
+      "id": 243246
+    },
+    {
+      "id": 266053
+    },
+    {
+      "id": 909664,
+      "Name": "manish kumar",
+      "Email": "manishgoswami495@gmail.com",
+      "Message": "sgvsdbeda"
+    },
+    {
+      "id": 188023,
+      "Name": "manish kumar",
+      "Email": "manish.kumar@ults.in",
+      "Message": "saccf"
+    },
+    {
+      "id": 750500,
+      "Name": "manish kumar",
+      "Email": "manish.kumar@ults.in",
+      "Message": "bhbh"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

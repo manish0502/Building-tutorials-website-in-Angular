@@ -2,8 +2,10 @@
     <div class="container">
       <div class="page-desc">
         <div class="row justify-content-center">
-          <div class="col-md-8">
-            <h1>Contact Us</h1>
+          <div>
+            <img src="assets/images/cont.png" class="card-img-top" alt="...">
+          </div>
+          <div class="col-md-6 mt-4">
             <form [formGroup]="contactForm" (ngSubmit)="postData(contactForm)" >
               <div class="form-group">
                 <input type="text" name="name" class="form-control" placeholder="Name" formControlName="Name">
@@ -21,6 +23,9 @@
                 <button type="submit" class="btn btn-success">Send</button>
               </div>
             </form>
+          </div>
+          <div class="col-md-6 mt-4">
+            <img src="assets/images/contactus.png" class="card-img-top" alt="...">
           </div>
         </div>
       </div>

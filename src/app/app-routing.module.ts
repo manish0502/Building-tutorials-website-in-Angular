@@ -11,6 +11,7 @@ import { RegistrationComponent }  from './auth/registration/registration.compone
 import { LoginComponent } from './auth/login/login.component'
 import { DashboardComponent } from './admin/dashboard/dashboard.component'
 import { PostComponent } from './admin/post/post.component'
+import {TeamComponent } from './staticpages/team/team.component'
 
 const routes: Routes = [
   {path:'',redirectTo:'',pathMatch:'full'},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path:'login' , component:LoginComponent},
   {path:'dashboard' ,component:DashboardComponent},
   {path:'post' ,component:PostComponent},
+  {path:'team' , component:TeamComponent},
   {path:'**',component:PageNotFoundComponent}
  
 ];
